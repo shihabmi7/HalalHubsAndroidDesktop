@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">HalalHubs</string>
+    <string name="action_home">Home</string>
+    <string name="action_settings">Settings</string>
+
+    <!--show food details-->
+
+    <string name="add_to_cart_msg">Successfully added to cart</string>
+
+    <!-- Restuarant view -->
+    <string name="restaurant_delivery_open">Restaurent Open: </string>
+    <string name="restaurent_delivery_close">Restaurent Close: </string>
+    <string name="button_show_menu">view menu</string>
+    <string name="price_per_unit">Price Per Unit</string>
+    <string name="quantity">Quantity</string>
+    <string name="total_price">Total Price:</string>
+    <string name="add_to_cart">add to cart</string>
+    <string name="go_to_checklist">Go to checklist</string>
+
+    <!-- //Show Shopping Details Form -->
+
+    <string name="subtotal">Sub Total</string>
+    <string name="delivery_fee">Delivery fee</string>
+    <string name="total">Total</string>
+    <string name="sales_tax">Sales tax</string>
+
+
+    <!-- Register Fomr -->
+    <string name="register_form_title">Fill up form to Register</string>
+    <string name="register_form_firstName">first name</string>
+    <string name="register_form_lastName">last name</string>
+    <string name="register_form_email">email</string>
+    <string name="register_form_username">username</string>
+    <string name="register_form_password">password</string>
+    <string name="register_form_button">Register</string>
+
+    <!-- Login Form -->
+    <string name="login_form_title">Fill up form to Login</string>
+    <string name="login_form_identifier">identifier</string>
+    <string name="login_form_password">password</string>
+    <string name="loginr_form_button">Log in</string>
+    <string name="register_view_button">Register</string>
+    <string name="login_view_button">Login</string>
+
+    <!-- Search Food Fragment-->
+
+    <string name="search_food">Search food</string>
+
+    <!--track my food-->
+    <string name="track_number_text">Your Tracking Number is -</string>
+    <string name="delivery_status">Delivery Status</string>
+
+    <!-- Social Connect Form -->
+    <string name="social_conn">Social Connect</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_twitter">Login with Twitter account</string>
+    <string name="login_with_linkedin">Login with LinkedIn</string>
+    <string name="login_with_gplus">Login with Google+ Account</string>
+
+    <!-- Facebook API key -->
+    <string name="facebook_app_id">827306844029259</string>
+    <!-- Twitter key -->
+    <string name="twitter_consumer_key">pxrpKKW8cF4Pj4NPym3V4z0k3</string>
+    <string name="twitter_consumer_secret">60S7GGZRamDqKAXCqQshwgm2KkCYd3cdYXuBpiBmOoqxuPEqFX</string>
+    <string name="twitter_callback">http://halalhubs.com/</string>
+    <!-- linkedin key -->
+    <!--<string name="linkedin_consumer_key">75qz4c1phj9rvf</string>-->
+    <!--<string name="linkedin_consumer_secret">iqHn1kkhTPCZ2S93</string>-->
+    <string name="linkedin_consumer_key">77mn4yljg4rz9y</string>
+    <string name="linkedin_consumer_secret">TCYZXbYino6PplqX</string>
+    <string name="linkedin_callback">http://45.55.196.7:1337/auth/linkedin/callback</string>
+    <!--Google API key -->
+    <string name="google_api_key">AIzaSyAFJr2hjwG2pqa-YZDRN8UOCImK2JII8Fs</string>
+
+    <!--Restuarant  -->
+    <string name="find_restaurant_button">Find Nearest Restaurant</string>
+    <string name="title_resturant_list">Nearest Restaurant List</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="track_food">Track My Food</string>
+
+    <string name="alert_image_content_description">Alert Image</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+</resources>

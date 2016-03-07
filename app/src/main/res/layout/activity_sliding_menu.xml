@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".activity.SlidingMenuActivity">
+
+
+    <LinearLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".30"
+        android:background="@color/Blue"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txt_profile_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_toRightOf="@+id/profile_pic"
+                android:padding="2dp"
+                android:text="Welcome"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/txt_profile_promo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_profile_name"
+                android:layout_below="@+id/txt_profile_name"
+                android:padding="2dp"
+                android:text="Welcome"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </RelativeLayout>
+        >
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/data_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".70"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_view_sliding_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#E6E7E8"
+            android:dividerHeight="1sp"
+            android:scrollbars="vertical"></ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

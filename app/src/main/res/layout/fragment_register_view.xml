@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_margin="4dp">
+
+    <TextView
+        android:id="@+id/register_status_message"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/status_message_font_size"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/register_form_firstName_edittext"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/register_status_message"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:hint="Full Name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D0D3D6"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/register_form_username_edittext"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/register_status_message"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:hint="User Name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D0D3D6"
+        android:textSize="14sp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/register_form_firstName_edittext">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/register_form_email_edittext"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/register_form_firstName_edittext"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:hint="Email"
+        android:textColor="#6A737B"
+        android:textColorHint="#D0D3D6"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/register_form_password_edittext"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/register_form_username_edittext"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="#6A737B"
+        android:textColorHint="#D0D3D6"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/register_form_email_edittext"
+        android:layout_alignParentRight="true">
+    </EditText>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/register_form_password_edittext"
+        android:layout_margin="13dp"
+        android:background="@color/color_white"
+        android:text="@string/register_form_button"
+        android:textSize="14sp" />
+
+</RelativeLayout>

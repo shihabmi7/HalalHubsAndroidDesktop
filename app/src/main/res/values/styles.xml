@@ -1,0 +1,58 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorControlNormal">@color/edittext_bottom_normal</item>
+        <item name="colorControlActivated">@color/edittext_bottom_highlight</item>
+        <item name="colorControlHighlight">@color/edittext_bottom_highlight</item>
+
+    </style>
+
+    <style name="Theme.MyAppTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/ActionBar.Solid.MyAppTheme</item>
+        <item name="icon">@mipmap/ic_launcher_h_h</item>
+        <item name="colorControlNormal">@color/edittext_bottom_normal</item>
+        <item name="colorControlActivated">@color/edittext_bottom_highlight</item>
+        <item name="colorControlHighlight">@color/edittext_bottom_highlight</item>
+    </style>
+
+    <style name="ActionBar.Solid.MyAppTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@color/white</item>
+        <item name="android:titleTextStyle">@style/TitleBarTextColor</item>
+    </style>
+
+    <style name="TitleBarTextColor" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/red</item>
+
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarStyle -->
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="EditTextDesign">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">12sp</item>
+
+
+    </style>
+    <!-- Backward-compatible version of ?android:attr/buttonBarButtonStyle -->
+    <style name="ButtonBarButton" />
+
+</resources>

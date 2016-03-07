@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Register Fomr -->
+    <dimen name="rigister_form_title_font_size">16dp</dimen>
+    <dimen name="status_message_font_size">18dp</dimen>
+
+    <!-- TITLE BAR -->
+    <dimen name="title_bar_height">50dp</dimen>
+    <dimen name="title_bar_iconsize">40dp</dimen>
+    <dimen name="title_bar_icon_padding">3dp</dimen>
+    <dimen name="title_bar_icon_divider_size">1px</dimen>
+
+    <!-- PADDING & MARGIN -->
+    <dimen name="common_cell_padding">4dp</dimen>
+    <dimen name="common_margin">4dp</dimen>
+    <dimen name="common_padding">12dp</dimen>
+    <dimen name="common_margin_medium">8dp</dimen>
+    <dimen name="common_progress_area_height">40dp</dimen>
+
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="tab_space_top">4dp</dimen>
+    <dimen name="tab_space">0dp</dimen>
+    <dimen name="tab_space_plus1">3dp</dimen>
+    <dimen name="tab_space_bottom_line">36sp</dimen>
+    <dimen name="tab_space_unselected_top">6sp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+</resources>

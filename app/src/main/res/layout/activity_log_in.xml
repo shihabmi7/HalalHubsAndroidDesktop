@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25AAE1"
+    tools:context=".activity.LogInActivity">
+
+    <TextView
+        android:id="@+id/status_message"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/status_message_font_size" />
+
+    <LinearLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:showDividers="end"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/registration_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragmentcontainer"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_forgot_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right|top"
+            android:layout_weight="0.5"
+            android:background="@drawable/box_shade"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="forgot password?"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            android:layout_margin="6dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btn_signup_login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left|top"
+            android:layout_weight="0.5"
+            android:background="@drawable/box_shade"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="New here? Sign up"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            android:layout_margin="6dp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_socialbtn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registration_form"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"></LinearLayout>
+
+</RelativeLayout>

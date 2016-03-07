@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/listitem_background"
+    android:paddingBottom="5dp" >
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/imageView_masjid_pic" -->
+    <!-- android:layout_width="70dp" -->
+    <!-- android:layout_height="55dp" -->
+    <!-- android:layout_margin="5dp" -->
+    <!-- android:scaleType="centerCrop" -->
+    <!-- android:src="@drawable/ic_launcher" /> -->
+
+    <ImageView
+        android:id="@+id/imageView_food_pic"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <!-- android:scaleType="fitXY" -->
+
+    <TextView
+        android:id="@+id/food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView_food_pic"
+        android:layout_toRightOf="@+id/imageView_food_pic"
+        android:text="Papus Fish n Chips"
+        android:textColor="@color/food_list_item_header" />
+
+    <TextView
+        android:id="@+id/food_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/food_name"
+        android:layout_below="@+id/food_name"
+        android:layout_marginTop="6dp"
+        android:text="130 reviews"
+        android:textColor="@color/food_list_item_description" />
+
+</RelativeLayout> <!-- android:layout_alignParentLeft="true" -->
+<!-- android:layout_centerVertical="true" -->

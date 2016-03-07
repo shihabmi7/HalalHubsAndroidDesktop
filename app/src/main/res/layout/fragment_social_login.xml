@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center|left"
+        android:text="@string/social_conn"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/status_message_font_size" />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/facebook"
+        android:gravity="center|left"
+        android:paddingLeft="80dp"
+        android:text="@string/login_with_facebook"
+        android:textColor="#ff000000" />
+    <!--<Button-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="@string/login_with_twitter"-->
+    <!--android:id="@+id/twitter"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:background="@drawable/tweeter"-->
+    <!--android:textColor="#ff000000"-->
+    <!--android:gravity="center|left"-->
+    <!--android:paddingLeft="80dp"-->
+    <!--android:layout_marginTop="10dp" />-->
+    <Button
+        android:id="@+id/linkedin"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/linked_in"
+        android:gravity="center|left"
+        android:paddingLeft="80dp"
+        android:text="@string/login_with_linkedin"
+        android:textColor="#ff000000" />
+
+    <Button
+        android:id="@+id/googleplus"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/google_plus"
+        android:gravity="center|left"
+        android:paddingLeft="80dp"
+        android:text="@string/login_with_gplus"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:id="@+id/mStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"></TextView>
+
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/google_plus"
+        android:gravity="center|left"
+        android:paddingLeft="80dp"
+        android:text="Signed Out"
+        android:textColor="#ff000000" />
+</LinearLayout>

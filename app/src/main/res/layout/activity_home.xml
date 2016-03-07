@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/app_bg"
+    android:layout_height="match_parent">
+
+    <!-- Include Title Bar -->
+
+    <!--<include-->
+        <!--android:id="@+id/title_bar"-->
+        <!--layout="@layout/title_bar" />-->
+
+    <TabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="25dp" >
+        <!--android:layout_below="@+id/title_bar"-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:background="@color/tab_frame"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </TabHost>
+
+
+    <RelativeLayout
+        android:id="@+id/adRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/admobLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"></LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

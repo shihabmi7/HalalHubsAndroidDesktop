@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/food_item_pic_bg"
+    tools:context="com.datatech.halalhubs.ShowFoodDetailsActivity" >
+
+    <!-- Include Title Bar -->
+
+
+    <!-- <include -->
+    <!-- android:id="@+id/title_bar" -->
+    <!-- layout="@layout/title_bar" /> -->
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/map_layout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@+id/header" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <fragment -->
+    <!-- android:id="@+id/map_branch" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- class="com.google.android.gms.maps.SupportMapFragment" /> -->
+    <!-- </RelativeLayout> -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/food_item_pic_bg"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/txt_view_header" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_gravity="center" -->
+                <!-- android:text="Branch Address" -->
+                <!-- android:textColor="@android:color/white" -->
+                <!-- android:textSize="18sp" -->
+                <!-- android:textStyle="bold" /> -->
+
+                <ImageView
+                    android:id="@+id/food_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_launcher" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_header_back_ground"
+                android:orientation="horizontal"
+                android:padding="4dp" >
+
+                <TextView
+                    android:id="@+id/textView_food_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:text="Food Name"
+                    android:textColor="@color/food_list_item_header"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/txt_view_header" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:text="Branch Description" -->
+                <!-- android:textColor="@android:color/white" -->
+                <!-- android:textSize="18sp" -->
+                <!-- android:textStyle="bold" /> -->
+
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/txt_view_food_description" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:text="Food Description" -->
+                <!-- android:textColor="@color/food_details_descrip" -->
+                <!-- android:textSize="15sp" /> -->
+
+                <com.datatech.halalhubs.view.JustifiedTextView
+                    xmlns:noghteh="http://noghteh.ir"
+                    android:id="@+id/txt_view_food_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Food Description"
+                    android:textColor="@color/food_details_descrip"
+                    noghteh:textSize="20sp" >
+                </com.datatech.halalhubs.view.JustifiedTextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_header_back_ground"
+                android:orientation="horizontal"
+                android:padding="4dp" >
+
+                <TextView
+                    android:id="@+id/textView_unit_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:text="@string/price_per_unit"
+                    android:textColor="@color/food_list_item_header"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp" >
+
+                <Button
+                    android:id="@+id/btn_decrease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text=" - " />
+
+                <TextView
+                    android:id="@+id/textView_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:text="@string/quantity"
+                    android:textColor="@color/food_details_descrip"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_increment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=" + "
+                    android:textColor="@color/food_details_descrip"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_header_back_ground"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/txt_view_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/total_price"
+                    android:textColor="@color/food_list_item_header"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txt_view_price_digit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0.0"
+                    android:textColor="@color/food_list_item_header"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp" >
+
+                <Button
+                    android:id="@+id/btn_add_to_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/food_details_button"
+                    android:padding="6dp"
+                    android:text="@string/add_to_cart"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
