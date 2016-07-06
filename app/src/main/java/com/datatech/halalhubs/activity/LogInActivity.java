@@ -82,13 +82,13 @@ public class LogInActivity extends AppCompatActivity implements FragmentManager.
     @Override
     protected void onPause() {
         super.onPause();
-        Log.e("Main Activity", "onPause");
+        Log.i("Main Activity", "onPause");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.e("Main Activity", "onResume");
+        Log.i("Main Activity", "onResume");
     }
 
         /*

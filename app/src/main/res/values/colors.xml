@@ -7,19 +7,25 @@
     <color name="tabDark">#FBAF3F</color>
     <color name="tabTransparent">#10ffffff</color>
     <color name="tab_frame">#00ADEF</color>
+    <color name="tab_orange">#FBB040</color>
+
 
     <color name="list_restaurent_bg">#F8FAFA</color>
     <color name="list_restaurent_name_text">#58595B</color>
     <color name="list_restaurent_review_text">#6D6E70</color>
     <color name="restaurent_view_open_close_bg">#F1F1F2</color>
 
+    <color name="text_common_gray">#58595B</color>
+    <color name="text_common_hint">#D0D3D6</color>
+    <color name="edittext_orange">#FBB040</color>
+
     <!-- progress bar -->
-<!--dialog-->
+    <!--dialog-->
     <color name="dialog_line">#F7931D</color>
     <color name="dialog_text">#F7931D</color>
     <color name="dialog_msg">#F7931D</color>
 
-<!--track food activity-->
+    <!--track food activity-->
     <color name="track_blue_back">#1C75BC</color>
 
 
