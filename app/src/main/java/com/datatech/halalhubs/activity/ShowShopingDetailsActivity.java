@@ -459,7 +459,7 @@ public class ShowShopingDetailsActivity extends CustomWindow {
         return total.toString();
     }
 
-    // TODO WE SHOULD HIT THE GETORDERAPI
+    // TODO WE SHOULD HIT THE GET ORDER API
     private void CreateOrder() {
 
 

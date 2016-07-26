@@ -56,8 +56,8 @@ public class Order {
     /**
      * @param quantity the quantity to set
      */
-    public void setQuatity(int quatity) {
-        this.quantity = quatity;
+    public void setQuatity(int quantity) {
+        this.quantity = quantity;
     }
 
     /**

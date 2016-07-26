@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/food_item_pic_bg"
-    tools:context="com.datatech.halalhubs.ShowFoodDetailsActivity" >
+    tools:context="com.datatech.halalhubs.activity.ShowFoodDetailsActivity" >
 
     <!-- Include Title Bar -->
 
