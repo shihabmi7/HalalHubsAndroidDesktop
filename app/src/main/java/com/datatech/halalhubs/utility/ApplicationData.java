@@ -79,15 +79,23 @@ public class ApplicationData {
 
     public static ArrayList<MenuItem> setMenuItems() {
 
+        //
+        if (menuItems.size()== 0){
 
-        for (int i = 0; i < iamge_Id.length; i++) {
+            menuItems.clear();
 
-            MenuItem menuItem = new MenuItem();
-            menuItem.setName(menu_Text[i]);
-            menuItem.setPicture(iamge_Id[i]);
+            for (int i = 0; i < iamge_Id.length; i++) {
 
-            menuItems.add(menuItem);
+                MenuItem menuItem = new MenuItem();
+                menuItem.setName(menu_Text[i]);
+                menuItem.setPicture(iamge_Id[i]);
+
+                menuItems.add(menuItem);
+            }
+
         }
+
+
 
         return menuItems;
 

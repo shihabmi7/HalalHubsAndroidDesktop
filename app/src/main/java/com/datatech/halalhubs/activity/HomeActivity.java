@@ -38,6 +38,7 @@ public class HomeActivity extends CustomWindow {
         setContentView(R.layout.activity_home);
 
         initializeSlidingMenu();
+
         try {
 
             mTabHost = (TabHost) findViewById(android.R.id.tabhost);

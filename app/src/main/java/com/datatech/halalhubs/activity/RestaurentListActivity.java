@@ -47,6 +47,9 @@ public class RestaurentListActivity extends CustomWindow {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurent_list);
 
+        // // TODO: 8/15/2016 i just try to add what happen if add slideing menu here  
+        initializeSlidingMenu();
+
         list_view = (ListView) findViewById(R.id.list_view);
         postCode = getIntent().getStringExtra(ApplicationData.POST_CODE);
 
