@@ -27,20 +27,22 @@ public class SplashScreenActivity extends Activity {
         setContentView(R.layout.activity_splash_screen);
 
         new Handler().postDelayed(new Runnable() {
-            public void run() {
+        public void run() {
 
-                Intent intent = new Intent();
-                intent.setClass(SplashScreenActivity.this, LogInActivity.class);
+            Intent intent = new Intent();
+            //intent.setClass(SplashScreenActivity.this, LogInActivity.class);
+            intent.setClass(SplashScreenActivity.this, HomeActivity.class);
 
-                SplashScreenActivity.this.startActivity(intent);
-                SplashScreenActivity.this.finish();
 
-                // transition from splash to main menu
-                overridePendingTransition(R.anim.fadein,
-                        R.anim.fadeout);
+            SplashScreenActivity.this.startActivity(intent);
+            SplashScreenActivity.this.finish();
 
-            }
-        }, SPLASH_DISPLAY_TIME);
-    }
+            // transition from splash to main menu
+            overridePendingTransition(R.anim.fadein,
+                    R.anim.fadeout);
+
+        }
+    }, SPLASH_DISPLAY_TIME);
+}
 
 }
